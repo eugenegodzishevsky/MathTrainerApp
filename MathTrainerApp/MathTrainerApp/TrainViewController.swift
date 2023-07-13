@@ -35,8 +35,6 @@ final class TrainViewController: UIViewController {
             button.layer.shadowRadius = 3
         }
     }
-
-    
 }
 
 
