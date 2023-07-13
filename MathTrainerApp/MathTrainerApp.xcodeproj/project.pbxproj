@@ -13,6 +13,7 @@
 		DAA33E072A5D749D008E34D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA33E052A5D749D008E34D8 /* Main.storyboard */; };
 		DAA33E092A5D749E008E34D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA33E082A5D749E008E34D8 /* Assets.xcassets */; };
 		DAA33E0C2A5D749E008E34D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA33E0A2A5D749E008E34D8 /* LaunchScreen.storyboard */; };
+		DAA33E142A5EF6F7008E34D8 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA33E132A5EF6F7008E34D8 /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DAA33E082A5D749E008E34D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA33E0B2A5D749E008E34D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA33E0D2A5D749E008E34D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA33E132A5EF6F7008E34D8 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DAA33DFF2A5D749D008E34D8 /* AppDelegate.swift */,
 				DAA33E012A5D749D008E34D8 /* SceneDelegate.swift */,
 				DAA33E032A5D749D008E34D8 /* ViewController.swift */,
+				DAA33E132A5EF6F7008E34D8 /* TrainViewController.swift */,
 				DAA33E052A5D749D008E34D8 /* Main.storyboard */,
 				DAA33E082A5D749E008E34D8 /* Assets.xcassets */,
 				DAA33E0A2A5D749E008E34D8 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA33E042A5D749D008E34D8 /* ViewController.swift in Sources */,
+				DAA33E142A5EF6F7008E34D8 /* TrainViewController.swift in Sources */,
 				DAA33E002A5D749D008E34D8 /* AppDelegate.swift in Sources */,
 				DAA33E022A5D749D008E34D8 /* SceneDelegate.swift in Sources */,
 			);
