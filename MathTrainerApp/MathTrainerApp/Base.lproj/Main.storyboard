@@ -262,27 +262,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7C-Cr-NaK">
-                                <rect key="frame" x="216.66666666666663" y="505.66666666666674" width="80" height="80"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="L9X-Jx-Jlw"/>
-                                    <constraint firstAttribute="width" constant="80" id="RcY-JW-act"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="444">
-                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="26"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yva-OF-2JV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqb-GS-rG6">
                                 <rect key="frame" x="96.666666666666686" y="505.66666666666674" width="80" height="80"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -302,8 +281,37 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czy-Wc-51x"/>
+                                    <action selector="leftAction:" destination="o73-C4-nXM" eventType="touchUpInside" id="RBa-DO-Nvq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7C-Cr-NaK">
+                                <rect key="frame" x="216.66666666666663" y="505.66666666666674" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="L9X-Jx-Jlw"/>
+                                    <constraint firstAttribute="width" constant="80" id="RcY-JW-act"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="444">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="26"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yva-OF-2JV"/>
+                                    <action selector="rightAction:" destination="o73-C4-nXM" eventType="touchUpInside" id="mhq-f4-pgV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-l0-LzT">
+                                <rect key="frame" x="196.66666666666666" y="665" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bmj-ZM-vMQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -312,6 +320,8 @@
                             <constraint firstItem="hcq-Gn-Ldt" firstAttribute="centerX" secondItem="gOm-0Y-kF3" secondAttribute="centerX" id="JZj-QL-y6j"/>
                             <constraint firstItem="V7C-Cr-NaK" firstAttribute="centerX" secondItem="gOm-0Y-kF3" secondAttribute="centerX" constant="60" id="KT6-qF-wEU"/>
                             <constraint firstItem="hcq-Gn-Ldt" firstAttribute="centerY" secondItem="gOm-0Y-kF3" secondAttribute="centerY" constant="-30" id="NUs-yN-QOW"/>
+                            <constraint firstItem="Bmj-ZM-vMQ" firstAttribute="bottom" secondItem="mhh-l0-LzT" secondAttribute="bottom" constant="118" id="gC7-DE-i8o"/>
+                            <constraint firstItem="mhh-l0-LzT" firstAttribute="centerX" secondItem="gOm-0Y-kF3" secondAttribute="centerX" id="gEc-u9-2na"/>
                             <constraint firstItem="zgk-TZ-K2Q" firstAttribute="top" secondItem="Bmj-ZM-vMQ" secondAttribute="top" constant="50" id="gPo-cI-qkD"/>
                             <constraint firstItem="V7C-Cr-NaK" firstAttribute="centerY" secondItem="Hqb-GS-rG6" secondAttribute="centerY" id="qc6-CP-Zif"/>
                             <constraint firstItem="Hqb-GS-rG6" firstAttribute="top" secondItem="hcq-Gn-Ldt" secondAttribute="bottom" constant="120" id="tqX-35-0Ui"/>
@@ -320,9 +330,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="BLE-kk-eYn"/>
                     <connections>
-                        <outletCollection property="buttonsCollection" destination="Hqb-GS-rG6" collectionClass="NSMutableArray" id="gXR-8m-OsU"/>
-                        <outletCollection property="buttonsCollection" destination="V7C-Cr-NaK" collectionClass="NSMutableArray" id="Hq2-ml-6vY"/>
-                        <outletCollection property="buttonsCollection" destination="zgk-TZ-K2Q" collectionClass="NSMutableArray" id="8yZ-FB-jsS"/>
+                        <outlet property="backButton" destination="zgk-TZ-K2Q" id="8bT-j5-24r"/>
+                        <outlet property="leftButton" destination="Hqb-GS-rG6" id="A6F-8p-ilF"/>
+                        <outlet property="questionLabel" destination="hcq-Gn-Ldt" id="BvD-eN-wb9"/>
+                        <outlet property="rightButton" destination="V7C-Cr-NaK" id="k7d-2c-Vxt"/>
+                        <outlet property="scoreLabel" destination="mhh-l0-LzT" id="EDO-rP-2lh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBZ-LC-bdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
